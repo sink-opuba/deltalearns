@@ -8,13 +8,25 @@ import SEO from "../components/seo"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
+    <div className="index-container">
+      <div className="index-header__box">
+        <h2 className="index-header__text">
+          Learn Valuable <br></br> Skills Online,{" "}
+          <span className="index-header__little">at little or no cost.</span>
+        </h2>
+
+        <h4 className="index-header__line">
+          An online learning platform for Deltans to acquire critical,
+          technical, and soft skills.
+        </h4>
+
+        <Link to="/register">Get Started</Link>
+      </div>
+
+      <div className="index-image-box">
+        <Image />
+      </div>
     </div>
-    <Link to="/page-2/">Go to page 2</Link>
   </Layout>
 )
 

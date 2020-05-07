@@ -1,0 +1,86 @@
+.index-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4rem;
+}
+
+.index-header__box {
+  padding: 2rem;
+  max-width: 40rem;
+
+  a {
+    font-family: Gilroy;
+    font-weight: lighter;
+    font-size: 1.8rem;
+    padding: 1rem 2.8rem;
+    line-height: 139.04%;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+    background: #fc6084;
+    border-radius: 3rem;
+  }
+}
+
+.index-header__text {
+  font-size: 4.8rem;
+  line-height: 6.8rem;
+  letter-spacing: 0.03em;
+  margin-top: 2rem;
+  color: #195272;
+}
+
+.index-header__little {
+  display: block;
+  font-size: 3.5rem;
+  line-height: 135.45%;
+  letter-spacing: 0.1em;
+  color: #195272;
+  opacity: 0.8;
+  font-weight: lighter;
+}
+.index-header__line {
+  font-size: 2rem;
+  line-height: 135.45%;
+  letter-spacing: 0.1rem;
+  color: #0c2b3c;
+  opacity: 0.6;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+}
+
+.index-image-box {
+  min-width: 46rem;
+}
+
+@media (max-width: 768px) {
+  .index-header__box {
+    padding: 1.6rem;
+    width: 100%;
+
+    a {
+      font-size: 1.8rem;
+      padding: 1rem 2.8rem;
+      letter-spacing: 0.03em;
+    }
+  }
+
+  .index-header__text {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+
+  .index-header__little {
+    font-size: 1.6rem;
+  }
+  .index-header__line {
+    font-size: 1.6rem;
+    line-height: 135.45%;
+    letter-spacing: 0.1rem;
+    margin-top: 4rem;
+    padding-top: 2rem;
+  }
+
+  .index-image-box {
+    display: none;
+  }
+}

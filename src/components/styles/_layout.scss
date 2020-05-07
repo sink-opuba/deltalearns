@@ -204,7 +204,8 @@ textarea {
   font: inherit;
 }
 html {
-  font: 112.5%/1.45em Gilroy georgia, serif;
+  // font-size: 70%; /*This defines what 1rem is --- the same as 10px;*/
+  font: 70% Gilroy georgia, serif;
   box-sizing: border-box;
   overflow-y: scroll;
 }
@@ -640,9 +641,4 @@ pre code:after,
 pre tt:before,
 pre tt:after {
   content: "";
-}
-@media only screen and (max-width: 480px) {
-  html {
-    font-size: 100%;
-  }
 }
