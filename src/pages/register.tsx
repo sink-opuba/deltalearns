@@ -4,11 +4,14 @@ import { PageProps, Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import RegistrationForm from "../components/RegistrationForm/RegistrationForm"
 
 const RegisterPage = (props: PageProps) => (
   <Layout>
     <SEO title="Register" />
-    <h1>COMING SOON!!!</h1>
+    <div className="reg-container">
+      <RegistrationForm />
+    </div>
   </Layout>
 )
 

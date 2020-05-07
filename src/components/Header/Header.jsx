@@ -1,12 +1,16 @@
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
+// import site from "../../../gatsby-config"
 import React, { useState } from "react"
 import DrawToggleButton from "../DrawToggleButton/DrawToggleButton"
 import SideBar from "../SideBar/SideBar"
+import AvailableCourses from "../AvailableCourses/AvailableCourses"
 
 const Header = ({ siteTitle }) => {
   const [sideBarOpen, setSideBarOpen] = useState(false)
   const toggleSideBarClick = () => setSideBarOpen(!sideBarOpen)
+  const [showCourseList, setShowCourseList] = useState(false)
+  // const url = `${site.siteMetadata.siteURL}${location.pathname}`
 
   return (
     <>
@@ -17,7 +21,10 @@ const Header = ({ siteTitle }) => {
 
         <div className="header-links">
           <div className="header-links__courses">
-            <h3>
+            <h3
+              onClick={() => setShowCourseList(!showCourseList)}
+              onKeyDown={() => setShowCourseList(!showCourseList)}
+            >
               Courses{" "}
               <span>
                 <svg
@@ -30,15 +37,17 @@ const Header = ({ siteTitle }) => {
                   <path
                     d="M2 2L8.5 8.5L15 2"
                     stroke="black"
-                    stroke-width="3"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth="3"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   />
                 </svg>
               </span>
+              <AvailableCourses open={showCourseList} position="absolute" />
             </h3>
           </div>
           <div className="header-links__btn">
+            {/* {url !== "/register" && <Link to="/register">Register</Link>} */}
             <Link to="/register">Register</Link>
           </div>
         </div>

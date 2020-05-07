@@ -16,8 +16,8 @@ const IndexPage = () => (
         </h2>
 
         <h4 className="index-header__line">
-          An online learning platform for Deltans to acquire critical,
-          technical, and soft skills.
+          An online learning platform for Deltans to acquire the technical and
+          soft skills needed for this times.
         </h4>
 
         <Link to="/register">Get Started</Link>

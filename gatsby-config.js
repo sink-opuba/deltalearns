@@ -3,6 +3,10 @@ module.exports = {
     title: `DeltaLearns`,
     description: `An online learning platform for Deltans to learn valuable skills at little or no cost.`,
     author: `@waffiihub`,
+    siteUrl:
+      process.env.NODE_ENV === "developement"
+        ? `http://localhost:8000`
+        : `https://deltalearns.netlify.app`,
     // image: `src/images/waffiihub-icon.png`,
   },
   plugins: [

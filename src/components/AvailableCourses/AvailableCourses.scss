@@ -1,0 +1,25 @@
+.course-list.open {
+  display: block;
+}
+
+.course-list.close {
+  display: none;
+}
+
+.course-list {
+  min-width: 25rem;
+  padding-top: 1rem;
+  background-color: #fff;
+  z-index: 1;
+}
+
+.course-list__item {
+  font-size: 1.4rem;
+  opacity: 0.7;
+  padding-left: 0.5rem;
+  border-left: 1.5px solid #333;
+  list-style-type: none;
+}
+.course-list__item:hover {
+  opacity: 1;
+}

@@ -1,11 +1,14 @@
-import React from "react"
+import React, { useState } from "react"
 import "./SideBar.scss"
+import AvailableCourses from "../AvailableCourses/AvailableCourses"
 
 const SideBar = ({ show, handleClick }) => {
+  const [showCourseList, setShowCourseList] = useState(false)
   let sideBarClasses = "sidebar"
   if (show) {
     sideBarClasses = "sidebar open"
   }
+
   return (
     <>
       <nav className={sideBarClasses}>
@@ -38,10 +41,33 @@ const SideBar = ({ show, handleClick }) => {
               <a href="/register">Register</a>
             </li>
             <li>
-              <a href="#startups">Courses</a>
+              <a
+                href="#startups"
+                onClick={() => setShowCourseList(!showCourseList)}
+              >
+                Courses{" "}
+                <span>
+                  <svg
+                    width="14"
+                    height="8"
+                    viewBox="0 0 17 10"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M2 2L8.5 8.5L15 2"
+                      stroke="black"
+                      strokeWidth="3"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                </span>
+              </a>
+              <AvailableCourses open={showCourseList} />
             </li>
             <li>
-              <a href="#contact">Contact Us </a>
+              <a href="/">About DeltaLearns</a>
             </li>
           </ul>
         </div>
