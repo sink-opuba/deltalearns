@@ -13,6 +13,9 @@
     color: #222;
     border-bottom: 2px solid #4966b1;
   }
+  .form-group {
+    margin-top: 4rem;
+  }
 }
 
 .registration-form {
@@ -42,6 +45,7 @@
 .reg-form__heading {
   max-width: 40rem;
   text-align: center;
+  padding: 1rem;
 }
 
 .reg-form__text {
