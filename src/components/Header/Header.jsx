@@ -21,10 +21,7 @@ const Header = ({ siteTitle }) => {
 
         <div className="header-links">
           <div className="header-links__courses">
-            <h3
-              onClick={() => setShowCourseList(!showCourseList)}
-              onKeyDown={() => setShowCourseList(!showCourseList)}
-            >
+            <h3 onClick={() => setShowCourseList(!showCourseList)}>
               Courses{" "}
               <span>
                 <svg
