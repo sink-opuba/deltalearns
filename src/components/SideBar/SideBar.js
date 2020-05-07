@@ -1,6 +1,5 @@
 import React from "react"
 import "./SideBar.scss"
-import logo from "../../images/techamplifier-logo-blue.png"
 
 const SideBar = ({ show, handleClick }) => {
   let sideBarClasses = "sidebar"
@@ -36,20 +35,15 @@ const SideBar = ({ show, handleClick }) => {
               <a href="/">Home</a>
             </li>
             <li>
-              <a href="#about">About Us</a>
+              <a href="/register">Register</a>
             </li>
             <li>
-              <a href="#startups">Startups</a>
-            </li>
-            <li>
-              <a href="#events">Events</a>
+              <a href="#startups">Courses</a>
             </li>
             <li>
               <a href="#contact">Contact Us </a>
             </li>
           </ul>
-
-          <img className="sidebar_logo" src={logo} alt="techamplifier logo" />
         </div>
       </nav>
     </>
