@@ -7,7 +7,7 @@ import SEO from "../components/seo"
 import RegistrationForm from "../components/RegistrationForm/RegistrationForm"
 
 const RegisterPage = (props: PageProps) => (
-  <Layout>
+  <Layout path={props.path} location={props.location}>
     <SEO title="Register" />
     <div className="reg-container">
       <RegistrationForm />

@@ -1,17 +1,14 @@
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
-// import site from "../../../gatsby-config"
 import React, { useState } from "react"
 import DrawToggleButton from "../DrawToggleButton/DrawToggleButton"
 import SideBar from "../SideBar/SideBar"
 import AvailableCourses from "../AvailableCourses/AvailableCourses"
 
-const Header = ({ siteTitle }) => {
+const Header = ({ siteTitle, path }) => {
   const [sideBarOpen, setSideBarOpen] = useState(false)
   const toggleSideBarClick = () => setSideBarOpen(!sideBarOpen)
   const [showCourseList, setShowCourseList] = useState(false)
-  // const url = `${site.siteMetadata.siteURL}${location.pathname}`
-
   return (
     <>
       <header className="header">
@@ -43,10 +40,12 @@ const Header = ({ siteTitle }) => {
               <AvailableCourses open={showCourseList} position="absolute" />
             </h3>
           </div>
-          <div className="header-links__btn">
-            {/* {url !== "/register" && <Link to="/register">Register</Link>} */}
-            <Link to="/register">Register</Link>
-          </div>
+          {/* if were in /register/ don't show register button */}
+          {path !== "/register/" && (
+            <div className="header-links__btn">
+              <Link to="/register">Register</Link>
+            </div>
+          )}
         </div>
         <div className="nav-toggle">
           <DrawToggleButton click={toggleSideBarClick} />
