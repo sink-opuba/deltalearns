@@ -1,0 +1,43 @@
+.payment-container {
+  max-width: 500px;
+  margin: 4rem auto 0;
+  box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+  padding: 2rem;
+  border-radius: 4px;
+}
+
+.payment-heading {
+  font-size: 2.6rem;
+  font-weight: lighter;
+}
+.payment-options__list {
+  li {
+    opacity: 0.7;
+    font-size: 1.3rem;
+  }
+  span {
+    border-bottom: 2px solid #cccccc;
+    padding-bottom: 2px;
+    cursor: pointer;
+    color: #195272;
+  }
+}
+
+.offline-details__list {
+  list-style-type: none;
+  li {
+    opacity: 0.8;
+  }
+}
+
+@media (max-width: 768px) {
+  .payment-heading {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .payment-heading {
+    font-size: 1.5rem;
+  }
+}
