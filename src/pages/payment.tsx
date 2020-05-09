@@ -14,7 +14,8 @@ const PaymentPage = (props: PageProps) => {
         <h2 className="payment-heading">Choose preferred payment method</h2>
         <ul className="payment-options__list">
           <li>
-            Pay online - <a href="/#">Click here</a>
+            Pay online -{" "}
+            <a href="https://paystack.com/pay/deltalearns">Click here</a>
           </li>
           <li>
             Pay offline -{" "}
