@@ -33,10 +33,10 @@ const PaymentPage = (props: PageProps) => {
             <li>Bank: Zenith Bank Plc</li>
             <li>Amount: NGN 3,000</li>
           </ul>
-          <small>
-            *To confirm your payment, send your details to
+          <p>
+            NOTE: To confirm your payment, send your details to
             payments@deltalearns.com
-          </small>
+          </p>
         </div>
       )}
     </Layout>

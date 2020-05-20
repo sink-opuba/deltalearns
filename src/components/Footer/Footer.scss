@@ -1,0 +1,98 @@
+.footer {
+  background: #4db0e7;
+  color: #ffffff;
+  padding: 2rem 1rem;
+  font-family: "SF Pro Rounded";
+}
+
+.footer-contact__details {
+  li {
+    font-size: 1.4rem;
+    list-style-type: none;
+    a {
+      color: #ffffff;
+    }
+    a:hover {
+      text-decoration: none;
+    }
+    span {
+      margin-right: 0.5rem;
+    }
+  }
+}
+
+.newsletter-container {
+  h3 {
+    color: #444444;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    font-size: 1.8rem;
+    opacity: 0.6;
+  }
+  div {
+    border: 1.5px solid #ffffff;
+    border-radius: 3rem;
+    max-width: 22rem;
+    padding: 0.3rem;
+    text-align: center;
+    input,
+    button {
+      margin: 0;
+      padding: 0.2rem 0.5rem;
+      border: none;
+      outline: none;
+      background: transparent;
+    }
+
+    input {
+      width: 80%;
+      font-size: 1.4rem;
+      color: #ffffff;
+    }
+    input::placeholder {
+      color: #ffffff;
+    }
+    button {
+      width: 18%;
+      font-size: 1.7rem;
+      padding: 0;
+      color: #ffffff;
+      border-radius: 50%;
+      transition: all 0.2s;
+    }
+    button:focus,
+    button:hover {
+      background-color: #ffffff;
+      color: #444444;
+    }
+  }
+}
+
+.copyright {
+  text-align: center;
+  padding-top: 2rem;
+  p {
+    font-size: 1.3rem;
+  }
+  a {
+    color: currentColor;
+  }
+}
+
+@media (max-width: 360px) {
+  .footer {
+    padding: 2rem 0rem 0.6rem;
+  }
+  .footer-contact__details {
+    margin: 0;
+    li:first-child {
+      font-size: 1.2rem;
+    }
+  }
+  .copyright {
+    padding: 1rem;
+    p {
+      font-size: 1.2rem;
+    }
+  }
+}

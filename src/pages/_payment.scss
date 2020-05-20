@@ -4,6 +4,9 @@
   box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
   padding: 2rem;
   border-radius: 4px;
+  p {
+    font-weight: lighter;
+  }
 }
 
 .payment-heading {
@@ -11,6 +14,7 @@
   font-weight: lighter;
 }
 .payment-options__list {
+  font-weight: normal;
   li {
     opacity: 0.7;
     font-size: 1.3rem;

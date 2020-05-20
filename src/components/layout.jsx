@@ -10,7 +10,9 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./Header/Header"
-import "./styles/bootstrap/bootstrap.min.css"
+import Footer from "./Footer/Footer"
+import "../../node_modules/bootstrap/dist/css/bootstrap.min.css"
+// import "./styles/bootstrap/bootstrap.min.css"
 import "./styles/_main.scss"
 
 const Layout = ({ children, path }) => {
@@ -36,6 +38,7 @@ const Layout = ({ children, path }) => {
       >
         <main>{children}</main>
       </div>
+      <Footer />
     </>
   )
 }
