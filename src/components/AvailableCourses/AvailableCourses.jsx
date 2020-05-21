@@ -1,15 +1,21 @@
 import React from "react"
 import "./AvailableCourses.scss"
 import PropTypes from "prop-types"
+import data from "../data/courses.json"
 
 const AvailableCourses = ({ open, position = "relative" }) => {
   const courseListClasses = open ? "course-list open" : "course-list close"
+
+  // console.log(data.courses.map(course => course.course))
   return (
-    <ul className={courseListClasses} style={{position}}>
-      <li className="course-list__item">Web Design</li>
-      <li className="course-list__item">Graphic Design</li>
-      <li className="course-list__item">Data Science</li>
-      <li className="course-list__item">Ethical Hacking</li>
+    <ul className={courseListClasses} style={{ position }}>
+      {data.courses.map(course => {
+        return (
+          <li key={course.id} id={course.id} className="course-list__item">
+            {course.course}
+          </li>
+        )
+      })}
     </ul>
   )
 }
