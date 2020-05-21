@@ -1,0 +1,64 @@
+{
+  "courses": [
+    {
+      "id": "WebsiteDesign(Wordpress)",
+      "category": "I.C.T",
+      "course": "Website Design (Wordpress)",
+      "author": "Paul Okoro",
+      "price": "3,000",
+      "slashedPrice": "25,000",
+      "image": "/websitedesign.jpg",
+      "rating": 4
+    },
+    {
+      "id": "EntreprenuershipFundamentals",
+      "category": "Business",
+      "course": "Entreprenuership Fundamentals",
+      "author": "Clifford Ettah Joe",
+      "price": "3,000",
+      "slashedPrice": "25,000",
+      "image": "/entreprenuership.jpg",
+      "rating": 4
+    },
+    {
+      "id": "MobilePhotography",
+      "category": "Creatives",
+      "course": "Mobile Photography",
+      "author": "Mercy Akiyede",
+      "price": "3,000",
+      "slashedPrice": "22,000",
+      "image": "/mobile-photography.jpg",
+      "rating": 4
+    },
+    {
+      "id": "Mathematics(JuniorSecondary)",
+      "category": "Education",
+      "course": "Mathematics (Junior Secondary)",
+      "author": "Alex Okome",
+      "price": "3,000",
+      "slashedPrice": "35,000",
+      "image": "/mathematics.jpg",
+      "rating": 5
+    },
+    {
+      "id": "GraphicDesign",
+      "category": "I.C.T",
+      "course": "Graphic Design",
+      "author": "Marvis Ighedosa",
+      "price": "3,000",
+      "slashedPrice": "25,000",
+      "image": "/graphic-design.jpg",
+      "rating": 5
+    },
+    {
+      "id": "DataScience",
+      "category": "I.C.T",
+      "course": "Data Science",
+      "author": "Marvis Ighedosa",
+      "price": "3,000",
+      "slashedPrice": "25,000",
+      "image": "/data-science.jpg",
+      "rating": 5
+    }
+  ]
+}
