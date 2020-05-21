@@ -1,8 +1,11 @@
 import React, { useState } from "react"
 import { FaStar } from "react-icons/fa"
+import PropTypes from "prop-types"
 
-const StarRating = () => {
-  const [rating, setRating] = useState(null)
+// Don't forget to round-off the props.rating value
+const StarRating = props => {
+  const [rating, setRating] = useState(props.rating)
+  const [hover, setHover] = useState(props.rating)
   return (
     <div>
       {[...Array(5)].map((star, i) => {
@@ -13,15 +16,26 @@ const StarRating = () => {
             <input
               type="radio"
               name="rating"
-              value={rating}
+              value={ratingValue}
               onClick={() => setRating(ratingValue)}
             />
-            <FaStar className="star" size={50} />
+            <FaStar
+              onMouseEnter={() => setHover(ratingValue)}
+              onMouseLeave={() => setHover(props.rating)}
+              className="star"
+              color={ratingValue <= (hover || rating) ? "#ffc107" : "#e4e5e9"}
+              size={50}
+            />
           </label>
         )
       })}
+      <span> {rating}</span>
     </div>
   )
 }
 
 export default StarRating
+
+StarRating.propTypes = {
+  rating: PropTypes.number.isRequired,
+}
