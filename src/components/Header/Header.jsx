@@ -3,6 +3,7 @@ import { Link } from "gatsby"
 import React, { useState } from "react"
 import DrawToggleButton from "../DrawToggleButton/DrawToggleButton"
 import SideBar from "../SideBar/SideBar"
+import ButtonLink from "../Shared/ButtonLink"
 import AvailableCourses from "../AvailableCourses/AvailableCourses"
 
 const Header = ({ siteTitle, path }) => {
@@ -43,7 +44,7 @@ const Header = ({ siteTitle, path }) => {
           {/* if were in /register/ don't show register button */}
           {path !== "/register/" && (
             <div className="header-links__btn">
-              <Link to="/register">Register</Link>
+              <ButtonLink dest="/register">Register</ButtonLink>
             </div>
           )}
         </div>
