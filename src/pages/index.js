@@ -1,30 +1,37 @@
 import React from "react"
-import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
+import ButtonLink from "../components/Shared/ButtonLink"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <div className="index-container">
-      <div className="index-header__box">
-        <h2 className="index-header__text">
-          Learn Valuable <br></br> Skills Online,{" "}
-          <span className="index-header__little">at little or no cost.</span>
-        </h2>
+      <section className="index-header">
+        <div className="index-header__box">
+          <h2 className="index-header__text">
+            Learn Valuable <br></br> Skills Online,{" "}
+            <span className="index-header__little">at little or no cost.</span>
+          </h2>
 
-        <h4 className="index-header__line">
-          An online learning platform for Deltans to acquire the technical and
-          soft skills needed for this times.
-        </h4>
+          <h4 className="index-header__line">
+            An online learning platform for Deltans to acquire the technical and
+            soft skills needed for this times.
+          </h4>
+          <ButtonLink dest="/register" bgColor="#fc6084">
+            Get Started
+          </ButtonLink>
+        </div>
 
-        <Link to="/register">Get Started</Link>
-      </div>
+        <div className="index-image-box">
+          <Image alt="learners sketch" filename="learners.png" />
+        </div>
+      </section>
 
-      <div className="index-image-box">
-        <Image />
+      <div className="text-center">
+        <h2 className="index-popular__heading">Most Popular Demand Courses</h2>
       </div>
     </div>
   </Layout>
