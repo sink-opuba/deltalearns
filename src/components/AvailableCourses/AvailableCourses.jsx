@@ -6,7 +6,6 @@ import data from "../data/courses.json"
 const AvailableCourses = ({ open, position = "relative" }) => {
   const courseListClasses = open ? "course-list open" : "course-list close"
 
-  // console.log(data.courses.map(course => course.course))
   return (
     <ul className={courseListClasses} style={{ position }}>
       {data.courses.map(course => {
