@@ -85,8 +85,11 @@
   }
   .footer-contact__details {
     margin: 0;
+    li {
+      font-size: 1.3rem;
+    }
     li:first-child {
-      font-size: 1.2rem;
+      font-size: 1.1rem;
     }
   }
   .copyright {
