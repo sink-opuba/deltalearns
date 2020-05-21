@@ -1,10 +1,3 @@
-/**
- * Layout component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.org/docs/use-static-query/
- */
-
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
@@ -14,6 +7,8 @@ import Footer from "./Footer/Footer"
 import "../../node_modules/bootstrap/dist/css/bootstrap.min.css"
 // import "./styles/bootstrap/bootstrap.min.css"
 import "./styles/_main.scss"
+import "slick-carousel/slick/slick.css"
+import "slick-carousel/slick/slick-theme.css"
 
 const Layout = ({ children, path }) => {
   const data = useStaticQuery(graphql`
