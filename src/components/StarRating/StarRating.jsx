@@ -1,8 +1,9 @@
 import React, { useState } from "react"
 import { FaStar } from "react-icons/fa"
 import PropTypes from "prop-types"
+import "./StarRating.scss"
 
-// Don't forget to round-off the props.rating value
+// Don't forget to round-off the props.rating value if they're decimals
 const StarRating = props => {
   const [rating, setRating] = useState(props.rating)
   const [hover, setHover] = useState(props.rating)
@@ -24,12 +25,12 @@ const StarRating = props => {
               onMouseLeave={() => setHover(props.rating)}
               className="star"
               color={ratingValue <= (hover || rating) ? "#ffc107" : "#e4e5e9"}
-              size={50}
+              size={16}
             />
           </label>
         )
       })}
-      <span> {rating}</span>
+      <span className="star-rating"> ({rating})</span>
     </div>
   )
 }
