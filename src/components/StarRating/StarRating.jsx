@@ -8,7 +8,7 @@ const StarRating = props => {
   const [rating, setRating] = useState(props.rating)
   const [hover, setHover] = useState(props.rating)
   return (
-    <div>
+    <div className="star-rating-container">
       {[...Array(5)].map((star, i) => {
         const ratingValue = i + 1
 
@@ -25,7 +25,7 @@ const StarRating = props => {
               onMouseLeave={() => setHover(props.rating)}
               className="star"
               color={ratingValue <= (hover || rating) ? "#ffc107" : "#e4e5e9"}
-              size={16}
+              size={14}
             />
           </label>
         )
