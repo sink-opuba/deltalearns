@@ -11,7 +11,7 @@ const AvailableCourses = ({ open, position = "relative" }) => {
       {data.courses.map(course => {
         return (
           <li key={course.id} id={course.id} className="course-list__item">
-            {course.course}
+            {course.title}
           </li>
         )
       })}
