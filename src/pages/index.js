@@ -4,6 +4,7 @@ import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
 import ButtonLink from "../components/Shared/ButtonLink"
+import PopularCourses from "../components/PopularCourses/PopularCourses"
 
 const IndexPage = () => (
   <Layout>
@@ -32,7 +33,7 @@ const IndexPage = () => (
 
       <div className="text-center">
         <h2 className="index-popular__heading">Most Popular Demand Courses</h2>
-
+        <PopularCourses />
         <div className="text-center mb-4">
           <ButtonLink dest="/courses" bgColor="#fc6084">
             view all courses
