@@ -1,0 +1,71 @@
+// Popular course card
+$dark-blue: #195272;
+$color-white: #ffffff;
+$light-black: #2a343d;
+$color-black: #000000;
+
+.popular-course__card {
+  width: 23rem;
+  font-family: "SF Pro Rounded";
+  margin: 1rem;
+}
+.popular-course__category {
+  border: 2px solid $dark-blue;
+  padding: 0.4rem 1rem;
+  margin-bottom: 2rem;
+  font-size: 1.6rem;
+  max-width: 65%;
+  border-radius: 3rem;
+  color: $dark-blue;
+}
+.popular-course__category:hover {
+  cursor: pointer;
+  color: $color-white;
+  background-color: $dark-blue;
+}
+.popular-course__details {
+  border: 0.9px solid $light-black;
+  border-radius: 2px;
+  box-shadow: 0 1rem 2rem rgba($color-black, 0.1);
+  height: 28rem;
+}
+.popular-course__img {
+  img {
+    height: 2rem;
+  }
+}
+.popular-course__title,
+.popular-course__author,
+.popular-course__rating {
+  padding-left: 1.1rem;
+}
+.popular-course__title {
+  padding-top: 1rem;
+  font-size: 1.5rem;
+  width: 70%;
+  line-height: 2rem;
+}
+.popular-course__author {
+  font-size: 1.1rem;
+}
+.popular-course__price {
+  max-width: 55%;
+  margin: 1rem 0 3rem 40%;
+  display: flex;
+  justify-content: space-around;
+  span:first-child {
+    font-size: 1rem;
+    text-decoration: line-through;
+    align-self: center;
+  }
+  span:last-child {
+    font-size: 1.7rem;
+    font-weight: bolder;
+  }
+}
+
+@media (max-width: 768px) {
+  .popular-course__card {
+    margin: 1rem auto;
+  }
+}
