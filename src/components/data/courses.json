@@ -7,7 +7,7 @@
       "author": "Paul Okoro",
       "price": "3,000",
       "slashedPrice": "25,000",
-      "image": "/websitedesign.jpg",
+      "image": "web-design-image.jpg",
       "rating": 4
     },
     {
@@ -17,7 +17,7 @@
       "author": "Clifford Ettah Joe",
       "price": "3,000",
       "slashedPrice": "25,000",
-      "image": "/entreprenuership.jpg",
+      "image": "entrepreneurship-image.jpeg",
       "rating": 4
     },
     {
@@ -27,7 +27,7 @@
       "author": "Mercy Akiyede",
       "price": "3,000",
       "slashedPrice": "22,000",
-      "image": "/mobile-photography.jpg",
+      "image": "mobile-photography-image.jpg",
       "rating": 4
     },
     {
@@ -37,7 +37,7 @@
       "author": "Alex Okome",
       "price": "3,000",
       "slashedPrice": "35,000",
-      "image": "/mathematics.jpg",
+      "image": "mathematics-teacher-image.jpg",
       "rating": 5
     },
     {
@@ -47,7 +47,7 @@
       "author": "Marvis Ighedosa",
       "price": "3,000",
       "slashedPrice": "25,000",
-      "image": "/graphic-design.jpg",
+      "image": "web-design-image.jpg",
       "rating": 5
     },
     {
@@ -57,7 +57,7 @@
       "author": "Marvis Ighedosa",
       "price": "3,000",
       "slashedPrice": "25,000",
-      "image": "/data-science.jpg",
+      "image": "web-design-image.jpg",
       "rating": 5
     }
   ]
