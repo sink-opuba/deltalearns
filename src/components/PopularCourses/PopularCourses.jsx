@@ -2,6 +2,7 @@ import React, { Component } from "react"
 import Slider from "react-slick"
 import "./PopularCourses.scss"
 import { SampleNextArrow, SamplePrevArrow } from "./CustomArrows"
+import { courses } from "../data/courses.json"
 import CourseCard from "../CourseCard/CourseCard"
 export default class PopularCourses extends Component {
   render() {
@@ -44,8 +45,8 @@ export default class PopularCourses extends Component {
     return (
       <div className="slider-div">
         <Slider {...settings}>
-          {[...Array(6)].map((el, index) => {
-            return <CourseCard key={index} />
+          {courses.map((course, index) => {
+            return <CourseCard course={course} key={index} />
           })}
         </Slider>
       </div>
