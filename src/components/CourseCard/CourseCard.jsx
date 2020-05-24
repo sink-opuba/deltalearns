@@ -17,8 +17,8 @@ const CourseCard = ({ course }) => (
         <StarRating rating={course.rating} />
       </div>
       <div className="popular-course__price">
-        <span>#{course.slashedPrice}</span>
-        <span>#{course.price}</span>
+        <span>₦{course.slashedPrice}</span>
+        <span>₦{course.price}</span>
       </div>
     </div>
   </div>
