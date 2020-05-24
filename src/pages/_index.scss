@@ -15,7 +15,7 @@
   line-height: 6.8rem;
   letter-spacing: 0.03em;
   margin-top: 2rem;
-  color: #195272;
+  color: $dark-blue;
 }
 
 .index-header__little {
@@ -23,7 +23,7 @@
   font-size: 3.5rem;
   line-height: 135.45%;
   letter-spacing: 0.1em;
-  color: #195272;
+  color: $dark-blue;
   opacity: 0.8;
   font-weight: lighter;
 }
@@ -47,7 +47,7 @@
   line-height: 6.2rem;
   letter-spacing: 0.03em;
   margin: 3.5rem 0rem 2rem;
-  color: #195272;
+  color: #4db0e7;
 }
 
 @media (max-width: 768px) {
@@ -87,3 +87,4 @@
     line-height: 2.8rem;
   }
 }
+

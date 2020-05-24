@@ -1,9 +1,9 @@
 .slider-div {
   margin: 3rem 1rem;
-  h3 {
-    min-height: 20rem;
-    background-color: blue;
-    max-width: 30rem;
-    margin: 1rem;
+}
+
+@media (max-width: 768px) {
+  .slider-div {
+    margin: 2rem 0rem;
   }
 }

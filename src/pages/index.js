@@ -34,7 +34,8 @@ const IndexPage = () => (
       <div className="text-center">
         <h2 className="index-popular__heading">Most Popular Demand Courses</h2>
         <PopularCourses />
-        <div className="text-center mb-4">
+
+        <div className="text-center mb-5 mt-5 pt-5">
           <ButtonLink dest="/courses" bgColor="#fc6084">
             view all courses
           </ButtonLink>
