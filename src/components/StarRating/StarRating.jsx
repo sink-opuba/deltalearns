@@ -30,7 +30,7 @@ const StarRating = props => {
           </label>
         )
       })}
-      <span className="star-rating">{rating.toFixed(1)}</span>
+      <span className="star-rating">{rating}.0</span>
     </div>
   )
 }
