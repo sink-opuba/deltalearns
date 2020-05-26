@@ -1,25 +1,33 @@
-.course-list.open {
-  display: block;
-}
-
-.course-list.close {
-  display: none;
-}
-
-.course-list {
-  min-width: 25rem;
-  padding-top: 1rem;
-  background-color: #fff;
-  z-index: 1;
-}
-
-.course-list__item {
-  font-size: 1.4rem;
-  opacity: 0.7;
-  padding-left: 0.5rem;
-  border-left: 1.5px solid #333;
-  list-style-type: none;
-}
-.course-list__item:hover {
-  opacity: 1;
+.available-courses {
+  button {
+    color: #000000;
+    background-color: transparent;
+    font-size: 1.8rem;
+    padding: 0;
+    margin: 0;
+  }
+  button:focus,
+  button:active {
+    outline: 0;
+    box-shadow: none;
+  }
+  .dropdown-item:active,
+  .dropdown-item:focus {
+    color: #fff;
+    text-decoration: none;
+    background-color: #4db0e7;
+  }
+  .dropdown-item {
+    display: block;
+    width: 100%;
+    padding: 0.25rem 1.5rem;
+    font-weight: 400;
+    text-align: inherit;
+    font-weight: lighter;
+    font-size: 1.3rem;
+    font-family: inherit;
+  }
+  .dropdown-item a:focus {
+    background-color: #4db0e7;
+  }
 }

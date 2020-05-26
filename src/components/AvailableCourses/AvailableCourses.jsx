@@ -1,26 +1,28 @@
 import React from "react"
 import "./AvailableCourses.scss"
-import PropTypes from "prop-types"
 import data from "../data/courses.json"
+import Dropdown from "react-bootstrap/Dropdown"
 
-const AvailableCourses = ({ open, position = "relative" }) => {
-  const courseListClasses = open ? "course-list open" : "course-list close"
-
+const AvailableCourses = () => {
   return (
-    <ul className={courseListClasses} style={{ position }}>
-      {data.courses.map(course => {
-        return (
-          <li key={course.id} id={course.id} className="course-list__item">
-            {course.title}
-          </li>
-        )
-      })}
-    </ul>
+    <div className="available-courses">
+      <Dropdown>
+        <Dropdown.Toggle variant="" id="dropdown-basic">
+          Courses
+        </Dropdown.Toggle>
+
+        <Dropdown.Menu>
+          {data.courses.map(course => {
+            return (
+              <Dropdown.Item key={course.id} href={`/courses#${course.id}`}>
+                {course.title}
+              </Dropdown.Item>
+            )
+          })}
+        </Dropdown.Menu>
+      </Dropdown>
+    </div>
   )
 }
 
 export default AvailableCourses
-
-AvailableCourses.propTypes = {
-  open: PropTypes.bool.isRequired,
-}
