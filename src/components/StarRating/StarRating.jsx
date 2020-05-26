@@ -13,7 +13,7 @@ const StarRating = props => {
         const ratingValue = i + 1
 
         return (
-          <label>
+          <label key={i}>
             <input
               type="radio"
               name="rating"
