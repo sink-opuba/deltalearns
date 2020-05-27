@@ -1,6 +1,7 @@
-import React, { useState } from "react"
+import React, { useState, useRef, useEffect } from "react"
 import { navigate } from "gatsby"
 import "./RegistrationForm.scss"
+import { courses } from "../../components/data/courses.json"
 
 function encode(data) {
   return Object.keys(data)
@@ -8,7 +9,16 @@ function encode(data) {
     .join("&")
 }
 
-const RegistrationForm = () => {
+const RegistrationForm = ({ location }) => {
+  const courseRef = useRef(null)
+  // course price state
+  const [price, setPrice] = useState(location.state && location.state.price)
+  useEffect(() => {
+    const currentPrice = courseRef.current.selectedOptions[0].getAttribute(
+      "courseprice"
+    )
+    setPrice(currentPrice)
+  }, [])
   const [selectedRadioOption, setSelectedRadioOption] = useState({
     selectedOption: "option1",
   })
@@ -20,6 +30,12 @@ const RegistrationForm = () => {
   const [state, setState] = useState({})
 
   const handleChange = e => {
+    if (e.target.name === "Course") {
+      const currentPrice = courseRef.current.selectedOptions[0].getAttribute(
+        "courseprice"
+      )
+      setPrice(currentPrice)
+    }
     setState({ ...state, [e.target.name]: e.target.value })
   }
 
@@ -173,18 +189,21 @@ const RegistrationForm = () => {
 
       {/* Select Course */}
       <div className="form-group">
-        <label htmlFor="course">Select Crash Course</label>
+        <label htmlFor="course">Select Crash Course ₦{price}</label>
         <select
           name="Course"
           id="course"
           className="form-control"
           onChange={handleChange}
           onBlur={handleChange}
+          defaultValue={location.state && location.state.title}
+          ref={courseRef}
         >
-          <option value="Web Design">Web Design</option>
-          <option value="Graphic Design">Graphic Design</option>
-          <option value="Data Science">Data Science</option>
-          <option value="Ethical Hacking">Ethical Hacking</option>
+          {courses.map((course, i) => (
+            <option courseprice={course.price} key={i} value={course.title}>
+              {course.title}
+            </option>
+          ))}
         </select>
       </div>
 
