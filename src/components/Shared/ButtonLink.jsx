@@ -4,12 +4,13 @@ import { Link } from "gatsby"
 
 // import "./ButtonLink.scss"
 
-const ButtonLink = ({ bgColor, color, dest, children }) => {
+const ButtonLink = ({ bgColor, color, dest, children, state }) => {
   return (
     <Link
       style={{ backgroundColor: bgColor, color }}
       className="btn-link"
       to={`${dest}`}
+      state={state}
     >
       {children}
     </Link>
@@ -29,4 +30,8 @@ ButtonLink.propTypes = {
   color: PropTypes.string,
   dest: PropTypes.string.isRequired,
   children: PropTypes.string.isRequired,
+  state: PropTypes.shape({
+    price: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
+    title: PropTypes.string,
+  }),
 }

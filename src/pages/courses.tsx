@@ -36,14 +36,19 @@ const CoursesPage = (props: PageProps) => (
                       {course.title}
                     </Accordion.Toggle>
                     <Accordion.Collapse eventKey={`${category}-${index}`}>
-                      <Card.Body>
+                      <Card.Body id={`${course.id}`}>
                         <Card.Title>What you'll learn</Card.Title>
                         <Card.Text>{course.description}</Card.Text>
                         <Card.Title>Author</Card.Title>
                         <Card.Text>{course.author}</Card.Text>
                         <Card.Title>Price</Card.Title>
                         <Card.Text>₦{course.price}</Card.Text>
-                        <ButtonLink dest="/register">Register</ButtonLink>
+                        <ButtonLink
+                          state={{ price: course.price, title: course.title }}
+                          dest="/register"
+                        >
+                          Register
+                        </ButtonLink>
                       </Card.Body>
                     </Accordion.Collapse>
                   </Card>
