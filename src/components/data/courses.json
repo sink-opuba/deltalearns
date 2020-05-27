@@ -6,6 +6,7 @@
       "title": "Website Design (Wordpress)",
       "author": "Paul Okoro",
       "price": "3,000",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita praesentium molestias quam vel aliquid. Placeat, excepturi fugit! Modi eligendi.",
       "slashedPrice": "25,000",
       "image": "web-design-image.jpg",
       "rating": 4
@@ -16,6 +17,7 @@
       "title": "Entreprenuership Fundamentals",
       "author": "Clifford Ettah Joe",
       "price": "3,000",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita praesentium molestias quam vel aliquid. Placeat, excepturi fugit! Modi eligendi.",
       "slashedPrice": "25,000",
       "image": "entrepreneurship-image.jpeg",
       "rating": 4
@@ -26,6 +28,7 @@
       "title": "Mobile Photography",
       "author": "Mercy Akiyede",
       "price": "3,000",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita praesentium molestias quam vel aliquid. Placeat, excepturi fugit! Modi eligendi.",
       "slashedPrice": "22,000",
       "image": "mobile-photography-image.jpg",
       "rating": 4
@@ -36,6 +39,7 @@
       "title": "Mathematics (Junior Secondary)",
       "author": "Alex Okome",
       "price": "3,000",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita praesentium molestias quam vel aliquid. Placeat, excepturi fugit! Modi eligendi.",
       "slashedPrice": "35,000",
       "image": "mathematics-teacher-image.jpg",
       "rating": 5
@@ -47,6 +51,7 @@
       "author": "Marvis Ighedosa",
       "price": "3,000",
       "slashedPrice": "25,000",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita praesentium molestias quam vel aliquid. Placeat, excepturi fugit! Modi eligendi.",
       "image": "web-design-image.jpg",
       "rating": 5
     },
@@ -57,6 +62,7 @@
       "author": "Marvis Ighedosa",
       "price": "3,000",
       "slashedPrice": "25,000",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita praesentium molestias quam vel aliquid. Placeat, excepturi fugit! Modi eligendi.",
       "image": "web-design-image.jpg",
       "rating": 5
     }
