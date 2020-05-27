@@ -19,8 +19,8 @@ const CoursesPage = (props: PageProps) => (
     <SEO title="Courses" />
     <div className="courses-container">
       {/* loop through all course categories and render */}
-      {getCategory(courses).map(category => (
-        <div className="courses-category__card">
+      {getCategory(courses).map((category, i) => (
+        <div key={`${category}i`} className="courses-category__card">
           <h2>{category}</h2>
           <div className="courses-category__accordion">
             <Accordion>
@@ -28,7 +28,7 @@ const CoursesPage = (props: PageProps) => (
               {courses
                 .filter(course => course.category === category)
                 .map((course, index) => (
-                  <Card>
+                  <Card key={`${category}${index}`}>
                     <Accordion.Toggle
                       as={Card.Header}
                       eventKey={`${category}-${index}`}
