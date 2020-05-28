@@ -6,8 +6,9 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import ButtonLink from "../components/Shared/ButtonLink"
 import { courses } from "../components/data/courses.json"
+import { Course } from "../components/data/course"
 
-const getCategory = data => {
+const getCategory = (data: Array<Course>) => {
   // get all course categories as a new array of strings
   let category = data.map(el => el.category)
   category = [...new Set(category)]
@@ -32,11 +33,12 @@ const CoursesPage = (props: PageProps) => (
                     <Accordion.Toggle
                       as={Card.Header}
                       eventKey={`${category}-${index}`}
+                      id={`${course.id}`}
                     >
                       {course.title}
                     </Accordion.Toggle>
                     <Accordion.Collapse eventKey={`${category}-${index}`}>
-                      <Card.Body id={`${course.id}`}>
+                      <Card.Body>
                         <Card.Title>What you'll learn</Card.Title>
                         <Card.Text>{course.description}</Card.Text>
                         <Card.Title>Author</Card.Title>
